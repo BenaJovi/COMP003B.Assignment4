@@ -2,7 +2,7 @@
 
 namespace COMP003B.Assignment4.Models
 {
-    public class ContactViewModel
+    public class RegistrationViewModel
     {
         [Required]
         [StringLength(100)]

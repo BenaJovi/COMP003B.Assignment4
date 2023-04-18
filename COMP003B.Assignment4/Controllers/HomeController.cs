@@ -24,16 +24,16 @@ namespace COMP003B.Assignment4.Controllers
         }
 
         [HttpGet]
-        public IActionResult Contact()
+        public IActionResult Register()
         {
             return View();
         }
         [HttpPost]
-        public IActionResult Confirmation(ContactViewModel model) 
+        public IActionResult ThankYou(RegistrationViewModel model) 
         { 
             if (!ModelState.IsValid)
             {
-                return View("Contact",model);
+                return View("Register", model);
             }
             return View(model);
         }
