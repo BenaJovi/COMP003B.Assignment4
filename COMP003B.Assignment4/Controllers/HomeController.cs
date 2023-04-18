@@ -33,7 +33,7 @@ namespace COMP003B.Assignment4.Controllers
         { 
             if (!ModelState.IsValid)
             {
-                return View(model);
+                return View("Contact",model);
             }
             return View(model);
         }
